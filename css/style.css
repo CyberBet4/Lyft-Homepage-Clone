@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondar-color);
+}
+
+:root {
+    --primary-color: #8B37FF;
+    --secondar-color: #0c0b31;
+    --primary-color-dark: #590dc4;
+    --off-white: #e6e6ea;
+    --primary-background-color: #ebebfe;
+}
+
+div.navbar-nav.ml-auto a {
+    text-transform: uppercase;
+    position: relative;
+    border-right-width: 0px !important;
+    border: 1px solid #dfdfdf;
+    border-bottom-width: 0px !important;
+}
+
+div.navbar-nav.ml-auto a:hover{
+    color: var(--primary-color) !important;
+}
+
+a.nav-link {
+    padding: 30px 20px !important;
+    font-weight: bold;
+    color: var(--secondar-color) !important;
+}
+a.nav-link:last-child{
+    padding-right: 5rem !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+    padding: 0px;
+    padding-left: 10px;
+    border-bottom: 1px solid #dfdfdf !important;
+    background-color: #fff !important;
+}
+
+div.navbar-nav.ml-auto a.active {
+    color: var(--primary-color);
+}
+
+.input-group.mb-3{
+    height: 50px;
+    padding-top: 5px;
+}
+.form-control {
+    padding: 25px 10px;
+}
+
+input.form-control.customized{
+    border-right: none; 
+    border-left: none;
+    box-shadow: none;
+    outline: none;
+    border-color: #dfdfdf;
+}
+/* TEXTS STYLING */
+.sub-text {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.mini-text {
+    font-size: 12px;
+}
+
+.display-4 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.text-large {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+a.footer-link {
+    color: var(--secondar-color);
+    text-decoration: none;
+}
+
+ul.list-style>li {
+    margin-bottom: 10px;
+}
+
+a.footer-link:hover {
+    text-decoration: none;
+    color: var(--secondar-color);
+}
+
+p.base-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p.text-bold {
+    font-weight: bold;
+}
+
+/* TEXTS STYLING ENDS HERE */
+
+
+/* BUTTON STYLING */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    padding: 15px 30px;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.btn-secondary {
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: none;
+    color: var(--secondar-color);
+    outline: none;
+    font-weight: bold;
+    padding: 15px 30px;
+
+}
+
+.btn-secondary:hover {
+    background-color: var(--off-white) !important;
+    color: var(--secondar-color);
+}
+
+.btn.btn-link {
+    color: var(--secondar-color);
+    font-weight: bold;
+}
+
+/* BUTTON STYLING ENDS HERE */
+
+.now-active {
+    border: 2px solid var(--primary-color);
+    background-color: #fff;
+    padding: 7px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.20);
+}
+
+.custom-tabs {
+    width: max-content;
+    padding-left: 20px;
+}
+
+.footer {
+    background: linear-gradient(var(--off-white) 5%, #fff 80%)
+}
+
+a.navbar-brand>.logo:hover {
+    fill: var(--secondary-color) !important;
+}
+
+button.navbar-toggler {
+    padding: 20px;
+    
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+    h1.display-4 {
+        font-size: 48px;
+    }
+    button.btn.btn-primary.mr-3.mt-3.mb-3,
+    button.btn.btn-secondary.mt-3.mb-3{
+        width: 100%;
+    }
+    button.btn.btn-primary.mr-3.mt-3.mb-3{
+        margin-right: 0px !important;
+    }
+    form.form-inline.mr-5{
+        margin-right: 10px !important;
+    }
+    .d-flex.align-items-center.mt-5 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    button.btn-primary.mr-3 {
+        width: 100%;
+    }
+    .wrap-flex{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .display-4, .text-large, .sub-text, .mobile-centered{
+        text-align: center;
+    }
+
+    .mobile-left-aligned{
+        text-align: left;
+    }
+
+    .d-flex.align-items-center {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mobile-centered{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .p-5{
+        padding: 10px !important; 
+    }
+    button.btn.btn-secondary{
+        width: 100%;
+    }
+}

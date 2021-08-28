@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyft Clone Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FONT AWESOME ICONS -->
+<script src="https://kit.fontawesome.com/e259a2f27c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="logo" height="60"  viewBox="-29.6928 -35.02625 257.3376 210.1575"><path d="M0 2.445h30.06v80.674c0 12.767 5.84 20.372 10.458 23.632-4.889 4.346-19.829 8.149-30.966-1.087C2.986 100.22 0 91.268 0 82.847zm187.863 67.014v-8.478h9.168V31.238h-10.068C183.098 13.381 167.2 0 148.187 0c-21.903 0-39.658 17.756-39.658 39.658v69.459c6.24.877 13.674-.109 19.999-5.354 6.565-5.445 9.551-14.396 9.551-22.817v-2.559h15.013V48.644h-15.013v-8.986h.036c0-5.562 4.509-10.071 10.072-10.071 5.562 0 10.089 4.509 10.089 10.071v29.801c0 21.902 17.774 39.658 39.676 39.658V79.53c-5.562 0-10.089-4.509-10.089-10.071zM74.015 31.238v43.651c0 2.478-2.056 4.487-4.593 4.487s-4.593-2.009-4.593-4.487V31.238H35.085v51.338c0 9.235 3.132 20.915 17.385 24.718 14.268 3.807 22.545-4.074 22.545-4.074-.754 5.192-5.644 8.995-13.521 9.81-5.96.616-13.582-1.358-17.384-2.988v27.199c9.688 2.857 19.935 3.78 29.963 1.834 18.199-3.531 29.685-18.742 29.685-38.979V31.238z" fill="#EA0B8C" fill-rule="evenodd"/></svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            
+        </button>
+
+        
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+
+                <form class="form-inline mr-5">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" style="border-right: none; background-color: #fff;" id="basic-addon1">
+                            <i class="fa fa-stop-circle" style="color: var(--primary-color);"></i>
+                        </span>
+                        </div>
+                        <input class="form-control customized" type="search" placeholder="Where are you going?" aria-label="Search">
+                        
+                        <div class="input-group-append" style="border: none;">
+                            <span class="input-group-text" style="border-left: none; background-color: #fff;">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                      </div>
+                      
+                </form>
+
+                <a class="nav-link active" href="#">DRIVER <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">RIDER</a>
+                <a class="nav-link" href="#">BUSINESS</a>
+                <a class="nav-link" href="#">LOG IN </a>
+                <a class="nav-link" href="#">SIGN UP</a>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN SECTION -->
+
+    <section class="container-fluid p-3">
+        <div class="row p-3">
+            <div class="col-xs-12 col-md-6">
+                <h3 class="sub-text">READY WHEN YOU ARE</h3>
+                <h1 class="display-4">
+                    Hop in. Crack a window. Let’s get back out there.
+                </h1>
+
+                <div class="d-flex wrap-flex">
+
+                    <button class="btn btn-primary mr-3 mt-3 mb-3">
+                        Apply to Drive
+                    </button>
+
+                    <button class="btn btn-secondary mt-3 mb-3">
+                        Sign up to Ride
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <!-- IMAGES GOES HERE -->
+                <img src="
+                https://images.ctfassets.net/q8mvene1wzq4/7tbzt327zCvFYIEDZH2WMF/f0f973a6559734ef14c713f041b4134a/home_hero_1_tile.jpg?w=1000&q=60&fm=webp
+                " class="img-fluid" alt="">
+
+                <img src="
+                https://images.ctfassets.net/q8mvene1wzq4/4AG5Z6ucAgN07j4WnPenfP/53532edcadcb2086955c2a8338dceeac/Driver_wearing_a_mask_in_the_car.jpg?w=800&q=60&fm=webp
+                " width="500px" style="
+                position: absolute;
+                left: -10%;
+                bottom: -5%;
+                " alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECOND SECTION -->
+    <section class="container mt-4 mb-4 p-3">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <!-- IMAGE GOES HERE -->
+                <img src="
+                https://images.ctfassets.net/q8mvene1wzq4/3onG3zYDb9ZQ2fi0ID4xKG/4ea1b75f22ed7c57d70490e4b6cf3730/driver_section_2x.jpg?w=1500&q=60&fm=webp
+                " alt="" style="padding: 80px;border-top-right-radius: 200px;" class="img-fluid">
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <h3 class="sub-text">
+                    drive with lyft
+                </h3>
+                <h2 class="text-large">
+                    Set your own hours.
+                </h2>
+                <h2 class="text-large">
+                    Earn on your own terms.
+                </h2>
+                <p class="base-text">
+                    Maybe you’re saving up for school. Or keeping flexible hours to spend more time with your family.
+                    It’s a great time to get in the driver’s seat, connect with your community, and earn a little extra
+                    cash. Plus, you can tell people you’ve got the best boss in town: you.
+                </p>
+
+                <div class="d-flex mt-3">
+                    <i class="fa fa-money mr-3" style="margin-top: 3px;"></i>
+                    <div>
+                        <p class="base-text text-bold" >Reliable Earnings</p>
+                        <p class="base-text">
+                            Make money, keep your tips, and use in-app tools to help maximize your earnings.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-3">
+                    <i class="fa fa-clock-o mr-3" style="margin-top: 3px;"></i>
+                    <div>
+                        <p class="base-text text-bold">A flexible Schedule</p>
+                        <p class="base-text">
+                            Be your own boss and drive whenever it works for you
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-3">
+                    <i class="fa fa-bolt mr-3" style="margin-top: 3px;"></i>
+                    <div>
+                        <p class="base-text text-bold">Get paid promptly</p>
+                        <p class="base-text">
+                            Cash out your earnings whenever you want with Express Pay and Lyft Direct.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mt-5">
+                    <button class="btn-primary mr-3 mt-3">
+                        Apply to drive
+                    </button>
+                    <a href="" class="btn btn-link mt-3">
+                        How driver pay works
+                        <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONY SLIDER -->
+    <section class="container-fluid">
+        <!-- <h2 class="text-large">We are skipping this part for now</h2> -->
+    </section>
+
+    <!-- FOURTH SECTION -->
+    <section class="container-fluid p-5 mobile-padding" style="background-color: var(--primary-background-color);">
+        <section class="container p-3">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <h4 class="sub-text">ride with lyft</h4>
+                    <h2 class="text-large">
+                        Ready, set, go
+                    </h2>
+                    <h2 class="text-large">
+                        in just a few quick taps.
+                    </h2>
+                    <p class="base-text mt-3 mobile-centered">
+                        Whether you’re following your heart or your busy schedule, we’ll get you where you need to go.
+                    </p>
+
+                    
+                    <div class="custom-tabs now-active mb-4" id="first-tab" >
+                        <i class="fa fa-taxi"></i>
+                        <a href="#first-image" class="btn btn-link">
+                            Get a reliable ride in minutes
+                        </a>
+                    </div>
+
+                    <div class="custom-tabs mb-4" id="second-tab">
+                        <i class="fa fa-smile-o"></i>
+                        <a href="#second-image" class="btn btn-link">
+                            Get a reliable ride in minutes
+                        </a>
+                    </div>
+
+                    <div class="custom-tabs mb-4" id="third-tab">
+                        <i class="fa fa-calendar"></i>
+                        <a href="#third-image" class="btn btn-link">
+                            Schedule your ride in advance
+                        </a>
+                    </div>
+
+                    <button class="btn btn-primary mb-4">
+                        Get a ride
+                    </button>
+
+                    <div>
+                        <img src="https://images.ctfassets.net/q8mvene1wzq4/5YeZZtVqMmX1it3il0O3JZ/a6e3fe92f39ac1bf7abcd967613e328a/LyftPink_Gradient5.png?w=&q=60&fm=webp"
+                            alt="" width="100px" class="img-fluid">
+                    </div>
+
+                    <div class="mt-4">
+                        <p>
+                            <span>Join Lyft Pink</span> to unlock perks like 15% off rideshare, free Grubhub+
+                            membership, exclusive offers, and more. All for $19.99 a month. Available in the US only
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <!-- CHANGING IMAGES GO HERE -->
+                    <img src="" alt="" class="img-fluid" id="first-image">
+                    <img src="" alt="" class="img-fluid" id="second-image">
+                    <img src="" alt="" class="img-fluid" id="third-image">
+                </div>
+
+                <div class="col-12 mt-4">
+                    <div class="d-flex" style="justify-content: space-between;">
+                        <div>
+                            <h2 class="text-large">
+                                Ride. Bike. Scoot. Go bananas.
+                            </h2>
+                            <p class="base-text">
+                                We’ve got options to get you where you’re going. Choose a ride* that suits your mood and
+                                budget.
+                            </p>
+                        </div>
+
+                        <div class="controls">
+                            <!-- controls go here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-4 mb-4">
+                    <!-- SCROLLER GOES HERE -->
+                </div>
+
+                <p class="mini-text mt-4">
+                    *Availability of bikes, scooters, rentals, ride types, and transit information varies by region.
+                </p>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- ESTIMATE COST SECTION -->
+    <section class="container-fluid p-4" style="background-color: #2b1b81;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3 mb-3">
+                    <h3 class="large-text text-white">
+                        Ready to roll?
+                    </h3>
+                    <h3 class="large-text text-white">
+                        Get a Lyft estimate
+                    </h3>
+                </div>
+
+                <div class="col-xs-12 col-md-3 mb-3">
+                    <input type="text" class="form-control" placeholder="Enter a pickup location*">
+                </div>
+                <div class="col-xs-12 col-md-3 mb-3">
+                    <input type="text" class="form-control" placeholder="Enter a dropoff location">
+                </div>
+                <div class="col-xs-12 col-md-3 mb-3">
+                    <button class="btn btn-secondary">
+                        Get estimate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pt-5 pb-5">
+        <div class="row mt-4 mb-4">
+            <div class="col-xs-12 col-md-6 ">
+                <h3 class="sub-text mobile-left-aligned">
+                    Safety first
+                </h3>
+                <h2 class="text-large mobile-left-aligned">
+                    How to show up like a best stranger
+                </h2>
+
+                <p class="base-text">
+                    Every ride should feel safe and comfy to everyone. A few simple ground rules can help make that
+                    happen for all drivers and riders. Read up, mask up, and crack a window to enjoy the breeze in your
+                    hair.
+                </p>
+                <div class="d-flex align-items-center">
+                    <button class="btn-primary mr-3 mb-3">
+                        Learn about safety
+                    </button>
+                    <a href="" class="btn btn-link mb-3">
+                        Community guidelines
+                        <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <!-- IMAGE GOES HERE -->
+                <img  src="
+                https://images.ctfassets.net/q8mvene1wzq4/14FL1uYaenGmLQlkKiEgqW/16c158a1bb699e0b0fab1fbcdff2e05d/Image_for_Homepage_Safety_Module.png?w=1500&q=60&fm=webp
+                " alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row pt-5 pb-5">
+            <div class="col-xs-12 col-md-6">
+                <!-- IMAGE GOES HERE -->
+                <img src="
+                https://images.ctfassets.net/q8mvene1wzq4/3pdKBmNsaWZsgfSMtkVFjH/08d5d280115e19c3b44bd2633d72927f/Driver_Vaccine_Access.jpg?w=1500&q=60&fm=webp
+                " alt="" class="img-fluid" style="border-top-left-radius: 200px; padding: 20px;">
+            </div>
+            <div class="col-xs-12 col-md-6 ">
+                <h3 class="sub-text">
+                    vaccine access
+                </h3>
+                <h2 class="text-large">
+                    Getting the vaccine starts with getting to the vaccine
+                </h2>
+
+                <p class="base-text">
+                    The pandemic has been tough on all of us, but it’s been particularly hard on communities that are
+                    underserved by public transit, healthcare, and other basic services. It’s our duty to help the best
+                    way we can: with rides. We’re working with partners and community members to help provide access to
+                    transportation to vaccine sites for people who need it. So everyone can say, “Sorry, COVID, our
+                    ride’s here.”
+                </p>
+                <div class="d-flex">
+                    <a href="" style="padding-left: 0px;" class="btn btn-link">
+                        Learn about the vaccine access
+                        <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container-fluid footer">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <p class="base-text text-bold mt-4">
+                        DRIVER
+                    </p>
+                    <ul class="list-style" style="list-style: none;">
+                        <li><a href="#" class="footer-link">
+                                Become a driver
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Earnings
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Cities
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Help
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Applicant Requirements
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Express Drive
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p class="base-text text-bold mt-4">
+                        RIDER
+                    </p>
+                    <ul class="list-style" style="list-style: none;">
+                        <li><a href="#" class="footer-link">
+                                Become a driver
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Earnings
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Cities
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Help
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Applicant Requirements
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Express Drive
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p class="base-text text-bold mt-4">
+                        LYFT
+                    </p>
+                    <ul class="list-style" style="list-style: none;">
+                        <li><a href="#" class="footer-link">
+                                Become a driver
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Earnings
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Cities
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Help
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Applicant Requirements
+                            </a>
+                        </li>
+                        <li><a href="#" class="footer-link">
+                                Express Drive
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <div class="row mt-4">
+                        <div class="col-12 mb-4">
+                            <a href="" class="btn btn-secondary">
+                                Lyft Driver App
+                            </a>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <a href="" class="btn btn-secondary">
+                                Lyft Rider App
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="" class="btn btn-secondary">
+                                Ride on Web
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-5">
+            <div class="d-flex justify-content-end mobile-centered">
+                <a href="#" class="mini-text footer-link mr-3" style="text-decoration: underline;">Terms</a>
+                <a href="#" class="mini-text footer-link mr-3" style="text-decoration: underline;">Privacy</a>
+                <p class="mini-text mr-5">&copy; Lyft, Inc.</p>
+                <p class="mini-text">CPUC ID No. TCP0032513-P</p>
+                <i class="fa fa-twitter mr-3"></i>
+                <i class="fa fa-facebook mr-3"></i>
+                <i class="fa fa-instagram mr-3"></i>
+                
+            </div>
+        </footer>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
